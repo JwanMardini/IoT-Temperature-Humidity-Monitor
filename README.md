@@ -55,7 +55,12 @@ An IoT project using a Raspberry Pi Pico W to monitor temperature and humidity, 
     npm install
     ```
 
-3. Start the frontend development server:
+3. Create a `.env` file in the `backend` directory with the following content:
+    ```env
+    VITE_WS_URL=your_websocket_url
+    ```
+
+4. Start the frontend development server:
     ```sh
     npm run dev
     ```
