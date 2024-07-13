@@ -3,6 +3,7 @@ import Dashboard from './components/Dashboard.jsx';
 import DataList from './components/DataList/DataList.jsx'; 
 import './App.css';
 
+const URL = import.meta.env.VITE_WS_URL;
 
 function App() {
   const [message, setMessage] = useState("");
@@ -13,8 +14,9 @@ function App() {
   const socket = useRef(null);
 
   useEffect(() => {
+    console.log('Connecting to:', URL);
     // Create a new WebSocket connection
-    socket.current = new WebSocket('wss://node-server-iot.onrender.com');
+    socket.current = new WebSocket(URL);
 
     socket.current.onopen = () => {
       console.log('Connected to server');
