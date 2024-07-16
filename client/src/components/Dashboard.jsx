@@ -7,7 +7,6 @@ const Dashboard = ({temp, hum, color}) => {
    const style = {
     display : "flex",
     justifyContent : "space-evenly",
-
     }
 
   return (
