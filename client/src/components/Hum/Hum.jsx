@@ -3,7 +3,9 @@ import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
 
 const Hum = ({hum}) => {
     return (
+        <>
         <div className="box">
+            <h3 style={{color: "black"}}>Humidity</h3>
             <Gauge
             value={hum}
             startAngle={-110}
@@ -22,6 +24,7 @@ const Hum = ({hum}) => {
             }
             />
         </div>
+        </>
 
     );
     }

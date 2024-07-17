@@ -4,6 +4,7 @@ import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
 const Temp = ({temp}) => {
     return (
         <div className="box">
+                <h3 style={{color: "black"}}>Tempreture</h3>
                 <Gauge
                 value={temp}
                 startAngle={-110}
