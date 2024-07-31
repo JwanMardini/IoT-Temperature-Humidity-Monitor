@@ -24,8 +24,24 @@
     margin: 50px;
 }
 
-
 body{
     background-color: rgb(43, 46, 74);
     font-family: 'Arial', sans-serif;
+}
+
+/* mobile version*/
+
+@media (max-width: 768px) {
+    .box{
+        max-width: 80%;
+    }
+    .header{
+        font-size: xx-large;
+    }
+
+    .dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
